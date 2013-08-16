@@ -21,8 +21,10 @@ $(function() {
       	event.preventDefault();
    	});
 
-   	$("body").on("hover", function() {
-   		$(this).width(400);
+   	$("#content").on("mouseenter", function() {
+   		$("#page").width(2660);   		
+   	}).on("mouseout", function() {
+   		$("#page").width(2560);
    	});
    	
 });
