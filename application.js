@@ -20,5 +20,9 @@ $(function() {
       	this.scrollLeft -= (delta * 3);
       	event.preventDefault();
    	});
+
+   	$("body").on("hover", function() {
+   		$(this).width(400);
+   	});
    	
 });
