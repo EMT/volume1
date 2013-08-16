@@ -1,4 +1,4 @@
-body, div, ul, li, p {
+body, div, ul, li, p, figure {
 	padding: 0;
 	margin: 0;
 }
@@ -9,6 +9,8 @@ body, div, ul, li, p {
 	color: rgb(255,255,255);
 	background-color: rgb(223,42,71);
 	font-family: "Neuzeit S LT W01 Book";
+	position: fixed;
+	z-index: 1;
 }
 
 #header h1 {
@@ -44,19 +46,24 @@ body, div, ul, li, p {
 }
 
 .volume-wrapper {
+	position: relative;
 	float: left;
 	height: 100%;
 	width: 320px;
 	transition: 0.5s ease-in-out;
+	overflow: hidden;
 }
 
 .volume-wrapper:hover {
 	/*padding: 0 50px;*/
 }
 
+.volume-wrapper figure {
+	position: absolute;
+}
+
 .volume-wrapper img {
 	width: 100%;
-	vertical-align: bottom;
 }
 
 #simple, #change, #open {
@@ -69,6 +76,54 @@ body, div, ul, li, p {
 
 #collaborate, #tinkering {
 	background-color: rgb(52,52,53);
+}
+
+#simple figure {
+	left: -120px;
+	right: -30px;
+	bottom: -50px;
+}
+
+#better figure {
+	left: -50px;
+	right: -80px;
+	bottom: -50px;
+}
+
+#collaborate figure {
+	left: -30px;
+	right: -30px;
+	bottom: -50px;
+}
+
+#adventurous figure {
+	left: -80px;
+	right: -100px;
+	bottom: -50px;
+}
+
+#change figure {
+	left: -80px;
+	right: -80px;
+	bottom: 0px;
+}
+
+#iterate figure {
+	left: -20px;
+	right: -20px;
+	bottom: -30px;
+}
+
+#open figure {
+	left: -50px;
+	right: -80px;
+	bottom: -200px;
+}
+
+#tinkering figure {
+	left: -300px;
+	right: -300px;
+	bottom: -450px;
 }
 
 @media all and (max-width: 400px) {
