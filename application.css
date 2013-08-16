@@ -7,7 +7,7 @@ body, div, ul, li {
 	height: 70px;
 	width: 100%;
 	color: white;
-	background-color: black;
+	background-color: rgb(223,42,71);
 	/*position: absolute;*/
 }
 
@@ -48,16 +48,19 @@ body, div, ul, li {
 
 .volume-wrapper img {
 	width: 100%;
+	vertical-align: bottom;
 }
 
-
-
-#better, #iterate, #volume-5, #volume-7 {
-	background-color: white;
+#simple, #change, #open {
+	background-color: rgb(231,164,62);
 }
 
-#collaborate, #open, #volume-6, #volume-8 {
-	background-color: grey;
+#better, #adventurous, #iterate {
+	background-color: rgb(127,199,198);
+}
+
+#collaborate, #tinkering {
+	background-color: rgb(52,52,53);
 }
 
 @media all and (max-width: 400px) {
