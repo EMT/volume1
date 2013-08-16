@@ -45,6 +45,16 @@ body, div, ul, li, p, figure {
 	padding: 0;
 }
 
+#content li {
+	color: rgb(255,255,255);
+	font-family: "NeuzeitSLTW01-BookHeavy";
+	font-size: 1.5em;
+}
+
+#content h2 {
+	margin: 120px 50px 50px 50px;
+}
+
 .volume-wrapper {
 	position: relative;
 	float: left;
